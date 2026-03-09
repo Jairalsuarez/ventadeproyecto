@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo Web - Proyecto Funval</title>
+    <link rel="stylesheet" href="./index.css">
+    <script type="module" src="./main.js"></script>
+</head>
+<body>
+
+    <section id="intro-screen" class="screen">
+        <div class="intro-content">
+            <h1>Convierte tu idea en realidad</h1>
+            <p>Descubre lo que la tecnología puede hacer por tu negocio.</p>
+            <button id="start-btn" class="btn-primary">Haga clic aquí</button>
+        </div>
+    </section>
+
+    <section id="main-content" class="screen hidden">
+        <div class="container">
+            <header class="hero">
+                <h2>¡Hola! Soy Jair y estoy estudiando Desarrollo Web en Funval y busco un proyecto para graduarme.</h2>
+                <p>Ofrezco soluciones digitales modernas, rápidas y efectivas para impulsar tu negocio al siguiente nivel.</p>
+            </header>
+
+            <section class="examples-section">
+                <h3>Lo que puedo crear para ti</h3>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">🛍️</div>
+                        <h4>Catálogos y Tiendas</h4>
+                        <p>Muestra tus productos o tu menú digitalmente, con opciones para que te hagan pedidos directos a tu WhatsApp.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📅</div>
+                        <h4>Sistemas de Citas</h4>
+                        <p>Ideal para barberías, clínicas o salones. Permite a tus clientes agendar su turno fácilmente desde su celular.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">💌</div>
+                        <h4>Invitaciones Digitales</h4>
+                        <p>Tarjetas interactivas para bodas o eventos, con confirmación de asistencia, cuenta regresiva y ubicación GPS.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="quote-section">
+                <h3>Cuéntame sobre tu proyecto</h3>
+                <form id="project-form">
+                    
+                    <div class="form-group">
+                        <label>¿Deseas financiar tu proyecto?</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="finance" value="Sí, necesito financiamiento 💳" required> Sí</label>
+                            <label><input type="radio" name="finance" value="No, cuento con el presupuesto 💵"> No</label>
+                            <label><input type="radio" name="finance" value="Quiero conocer las opciones 🤔"> Quiero opciones</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Selecciona los requerimientos (puedes elegir varios):</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="req" value="Catálogo / Menú digital 🛒"> Catálogo o Menú digital</label>
+                            <label><input type="checkbox" name="req" value="Sistema para agendar citas 📆"> Sistema para agendar citas</label>
+                            <label><input type="checkbox" name="req" value="Invitaciones Digitales 🥂"> Invitaciones Digitales</label>
+                            <label><input type="checkbox" name="req" value="Diseño adaptado a celulares 📱"> Diseño adaptado a celulares</label>
+                            <label><input type="checkbox" name="req" value="Botón directo a WhatsApp 💬"> Botón directo a WhatsApp</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Breve descripción de tu idea o negocio:</label>
+                        <textarea id="description" rows="4" placeholder="Ej: Tengo una barbería y necesito que los clientes puedan agendar sus cortes de cabello..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-whatsapp">
+                        <span>Enviar a WhatsApp para Cotizar</span>
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                    </button>
+                </form>
+            </section>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
