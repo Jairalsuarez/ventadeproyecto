@@ -216,16 +216,15 @@ textarea:focus {
         transform: translateY(0);
     }
 }
+
 /* =========================================
    DISEÑO RESPONSIVO (MÓVILES Y TABLETS)
    ========================================= */
 @media (max-width: 768px) {
-    /* Reducir el padding general para aprovechar la pantalla */
     .screen {
         padding: 1rem;
     }
 
-    /* Ajustar tamaños de texto para que no se desborden */
     .intro-content h1 {
         font-size: 2rem;
     }
@@ -253,25 +252,21 @@ textarea:focus {
         margin-bottom: 1.5rem;
     }
 
-    /* Pasar las tarjetas a una sola columna */
     .cards-grid {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
 
-    /* Reducir el padding interno de las tarjetas y el formulario */
     .card, 
     .quote-section {
         padding: 1.5rem;
     }
 
-    /* Hacer que los botones ocupen todo el ancho en móvil */
     button {
         width: 100%;
         padding: 1rem;
     }
 
-    /* Mejorar la experiencia táctil (Touch Targets) para los dedos */
     .radio-group label, 
     .checkbox-group label {
         padding: 0.6rem 0;
@@ -281,7 +276,6 @@ textarea:focus {
         font-size: 0.95rem;
     }
     
-    /* Agrandar un poco los cuadritos y círculos de selección */
     input[type="radio"], 
     input[type="checkbox"] {
         width: 1.2rem;
@@ -330,13 +324,11 @@ textarea:focus {
    ANIMACIONES DE ENTRADA EN CASCADA (STAGGER)
    ========================================= */
 
-/* Ocultar elementos inicialmente antes de que empiece la animación */
 .stagger-1, .stagger-2, .stagger-3, .stagger-4, .stagger-5, .stagger-6 {
     opacity: 0;
     transform: translateY(30px);
 }
 
-/* Cuando la pantalla principal tiene la clase fade-in, activamos la cascada */
 .fade-in .stagger-1 { animation: slideUpFade 0.6s ease forwards 0.1s; }
 .fade-in .stagger-2 { animation: slideUpFade 0.6s ease forwards 0.3s; }
 .fade-in .stagger-3 { animation: slideUpFade 0.6s ease forwards 0.5s; }
