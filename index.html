@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desarrollo Web - Proyecto Funval</title>
+    <title>Jair - Desarrollo Web</title>
+    <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">💻</text></svg>'>
     <link rel="stylesheet" href="./index.css">
-    <script type="module" src="./main.js"></script>
+    <script type="module" src="./main.js" defer></script>
 </head>
 <body>
 
@@ -13,31 +14,31 @@
         <div class="intro-content">
             <h1>Convierte tu idea en realidad</h1>
             <p>Descubre lo que la tecnología puede hacer por tu negocio.</p>
-            <button id="start-btn" class="btn-primary">Haga clic aquí</button>
+            <button id="start-btn" class="btn-primary pulse-anim">Haga clic aquí</button>
         </div>
     </section>
 
     <section id="main-content" class="screen hidden">
         <div class="container">
-            <header class="hero">
-                <h2>¡Hola! Soy Jair y estoy estudiando Desarrollo Web en Funval y busco un proyecto para graduarme.</h2>
+            <header class="hero stagger-1">
+                <h2>¡Hola! Soy Jair, estudiante de Desarrollo Web en Funval, y busco un proyecto para graduarme.</h2>
                 <p>Ofrezco soluciones digitales modernas, rápidas y efectivas para impulsar tu negocio al siguiente nivel.</p>
             </header>
 
             <section class="examples-section">
-                <h3>Lo que puedo crear para ti</h3>
+                <h3 class="stagger-2">Lo que puedo crear para ti</h3>
                 <div class="cards-grid">
-                    <div class="card">
+                    <div class="card stagger-3">
                         <div class="card-icon">🛍️</div>
                         <h4>Catálogos y Tiendas</h4>
                         <p>Muestra tus productos o tu menú digitalmente, con opciones para que te hagan pedidos directos a tu WhatsApp.</p>
                     </div>
-                    <div class="card">
+                    <div class="card stagger-4">
                         <div class="card-icon">📅</div>
                         <h4>Sistemas de Citas</h4>
                         <p>Ideal para barberías, clínicas o salones. Permite a tus clientes agendar su turno fácilmente desde su celular.</p>
                     </div>
-                    <div class="card">
+                    <div class="card stagger-5">
                         <div class="card-icon">💌</div>
                         <h4>Invitaciones Digitales</h4>
                         <p>Tarjetas interactivas para bodas o eventos, con confirmación de asistencia, cuenta regresiva y ubicación GPS.</p>
@@ -45,7 +46,7 @@
                 </div>
             </section>
 
-            <section class="quote-section">
+            <section class="quote-section stagger-6">
                 <h3>Cuéntame sobre tu proyecto</h3>
                 <form id="project-form">
                     
@@ -83,5 +84,5 @@
         </div>
     </section>
 
-    </body>
+</body>
 </html>
