@@ -1,3 +1,4 @@
+// Manejo del botón inicial
 document.getElementById('start-btn').addEventListener('click', () => {
     const introScreen = document.getElementById('intro-screen');
     const mainContent = document.getElementById('main-content');
@@ -8,6 +9,7 @@ document.getElementById('start-btn').addEventListener('click', () => {
     window.scrollTo(0, 0);
 });
 
+// Manejo del formulario hacia WhatsApp
 document.getElementById('project-form').addEventListener('submit', (e) => {
     e.preventDefault();
 
@@ -19,10 +21,8 @@ document.getElementById('project-form').addEventListener('submit', (e) => {
     
     const description = document.getElementById('description').value;
 
-    // Tu número exacto
     const phoneNumber = "593989200977"; 
 
-    // Mensaje con emojis y formato Markdown de WhatsApp
     const message = `¡Hola Jair! Vengo de tu página web y estoy interesado en que me ayudes con un proyecto para mi negocio. \n\n` +
                     `*Financiamiento:* ${financeOption}\n\n` +
                     `*Requerimientos que me interesan:*\n${reqsText}\n\n` +
@@ -33,4 +33,25 @@ document.getElementById('project-form').addEventListener('submit', (e) => {
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     
     window.open(whatsappUrl, '_blank');
+});
+
+// ==========================================
+// LÓGICA DEL MODAL DE FUNVAL
+// ==========================================
+const funvalBtn = document.getElementById('funval-btn');
+const funvalModal = document.getElementById('funval-modal');
+const closeModalBtn = document.getElementById('close-modal');
+
+funvalBtn.addEventListener('click', () => {
+    funvalModal.classList.add('show');
+});
+
+closeModalBtn.addEventListener('click', () => {
+    funvalModal.classList.remove('show');
+});
+
+window.addEventListener('click', (e) => {
+    if (e.target === funvalModal) {
+        funvalModal.classList.remove('show');
+    }
 });

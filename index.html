@@ -6,7 +6,7 @@
     <title>Jair - Desarrollo Web</title>
     <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">💻</text></svg>'>
     <link rel="stylesheet" href="./index.css">
-    <script type="module" src="./main.js" defer></script>
+    <script type="module" src="./main.js"></script>
 </head>
 <body>
 
@@ -20,8 +20,9 @@
 
     <section id="main-content" class="screen hidden">
         <div class="container">
+            
             <header class="hero stagger-1">
-                <h2>¡Hola! Soy Jair, estudiante de Desarrollo Web en Funval, y busco un proyecto para graduarme.</h2>
+                <h2>¡Hola! Soy Jair, estudiante de Desarrollo Web en <button type="button" id="funval-btn" class="text-link">Funval 🎓</button>, y busco un proyecto para graduarme.</h2>
                 <p>Ofrezco soluciones digitales modernas, rápidas y efectivas para impulsar tu negocio al siguiente nivel.</p>
             </header>
 
@@ -83,6 +84,14 @@
             </section>
         </div>
     </section>
+
+    <div id="funval-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close-btn">&times;</span>
+            <h3>¿Qué es Funval? 🎓</h3>
+            <p><strong>Funval (Fundación Valores)</strong> es una academia intensiva que beca y capacita a talentos latinoamericanos en tecnología. Mi formación aquí está enfocada en la excelencia, preparándome con las habilidades de programación más modernas y requeridas por la industria actual.</p>
+        </div>
+    </div>
 
 </body>
 </html>
