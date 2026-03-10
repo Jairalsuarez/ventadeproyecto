@@ -216,3 +216,76 @@ textarea:focus {
         transform: translateY(0);
     }
 }
+/* =========================================
+   DISEÑO RESPONSIVO (MÓVILES Y TABLETS)
+   ========================================= */
+@media (max-width: 768px) {
+    /* Reducir el padding general para aprovechar la pantalla */
+    .screen {
+        padding: 1rem;
+    }
+
+    /* Ajustar tamaños de texto para que no se desborden */
+    .intro-content h1 {
+        font-size: 2rem;
+    }
+
+    .intro-content p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero {
+        margin-bottom: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .examples-section h3, 
+    .quote-section h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Pasar las tarjetas a una sola columna */
+    .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    /* Reducir el padding interno de las tarjetas y el formulario */
+    .card, 
+    .quote-section {
+        padding: 1.5rem;
+    }
+
+    /* Hacer que los botones ocupen todo el ancho en móvil */
+    button {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    /* Mejorar la experiencia táctil (Touch Targets) para los dedos */
+    .radio-group label, 
+    .checkbox-group label {
+        padding: 0.6rem 0;
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        font-size: 0.95rem;
+    }
+    
+    /* Agrandar un poco los cuadritos y círculos de selección */
+    input[type="radio"], 
+    input[type="checkbox"] {
+        width: 1.2rem;
+        height: 1.2rem;
+        cursor: pointer;
+    }
+}

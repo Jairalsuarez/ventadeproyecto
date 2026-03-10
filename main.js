@@ -23,11 +23,11 @@ document.getElementById('project-form').addEventListener('submit', (e) => {
     const phoneNumber = "593989200977"; 
 
     // Mensaje con emojis y formato Markdown de WhatsApp
-    const message = `¡Hola Jair! Vengo de tu página web y estoy interesado en que me ayudes con un proyecto para mi negocio. 🚀\n\n` +
+    const message = `¡Hola Jair! Vengo de tu página web y estoy interesado en que me ayudes con un proyecto para mi negocio. \n\n` +
                     `*Financiamiento:* ${financeOption}\n\n` +
                     `*Requerimientos que me interesan:*\n${reqsText}\n\n` +
                     `*Descripción de mi idea:*\n"${description}"\n\n` +
-                    `Me gustaría saber más sobre los costos y el proceso. ¡Quedo atento! ✨`;
+                    `Me gustaría saber más sobre los costos y el proceso. ¡Quedo atento! `;
 
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
